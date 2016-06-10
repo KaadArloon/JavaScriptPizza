@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+</head>
+
+<body>
+  <h1>Bonjour !</h1>
+  <button id="createPizza">Créer pizza</button>
+  <div id="listeGarniture">
+    <ul style="list-style-type : none">
+      <li><button id="ing_egg">egg</button></li>
+      <li><button id="ing_mozza">mozzarella</button></li>
+      <li><button id="ing_mushrooms">mushrooms</button></li>
+    </ul>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#createPizza").click(function() {
+        $("li").show();
+      });
+    });
+  </script>
+  <script src="build.js"></script>
+</body>
+
+</html>
